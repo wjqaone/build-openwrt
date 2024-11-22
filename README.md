@@ -96,13 +96,7 @@ sed -i '$a src-git pwdep https://github.com/hongweifuture/pwdep.git' feeds.conf.
 
 文件共提供多种类型供下载（根据编译时选择的Target Images配置），需要其他类型的请自行转换，下面是部分说明
 
-序号	名称	说明
-（1）	openwrt-x86-64-generic-squashfs-combined.img 或.gz	带引导分区文件，也就是刷完后可以直接启动无需做设置，推荐使用！
-（2）	openwrt-x86-64-generic-squashfs-combined.vmdk	带引导分区的虚拟机Vmware文件，VM WorkStation直接选择磁盘后可直接启动无需再单独设置（注意：非ESXI文件，ESXI建议使用(1)转换后使用）。
-（3）	openwrt-x86-64-rootfs-squashfs.img或.gz	分区文件，刷此文件，只是把系统刷到了分区（分区格式需为Ext4），需要单独设置grub或者syslinux来进行引导。
-（4）	openwrt-x86-64-generic-squashfs-combined-efi.img或.gz	带UEFI固件为支持efi启动，原理同（1）的说明。
-（5）	openwrt-x86-64-generic-ext4-combined.img 或.gz	为Ext4分区文件，可作为升级使用直接写入到分区即可。efi.img同理
-（6）	openwrt-x86-64-combined-squashfs.iso	系统镜像文件，可以使用ultraiso或类似工具直接写入到磁盘即可，efi 文件同理。
+![image](https://github.com/user-attachments/assets/7f6e9cdc-8bd4-4d30-9eff-6f929491ae07)
 
 一般来说，用openwrt-x86-64-generic-squashfs-combined.img 或.gz 文件就可以了
 
