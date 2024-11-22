@@ -64,6 +64,7 @@
  由于时间仓促，修改可能不到位，后续慢慢补充！
 
 8， 个人说明
+
 步骤1: 注册与登录GitHub
 访问 GitHub 并注册账号，如果已有账号则直接登录。
 步骤2: 设置个人访问令牌
@@ -79,15 +80,20 @@
 
 进阶
 配置ip，diy-part2.sh
+```
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.1.230/g' package/base-files/files/bin/config_generate
-
+```
 添加软件源，diy-part1.sh
+```
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git hwfuture https://github.com/hongweifuture/openwrt-packages' feeds.conf.default
 sed -i '$a src-git pwdep https://github.com/hongweifuture/pwdep.git' feeds.conf.default
+```
+
 ![image](https://github.com/user-attachments/assets/441d6d76-66b9-4ba6-bd4b-a0dc64803f56)
+
 文件共提供多种类型供下载（根据编译时选择的Target Images配置），需要其他类型的请自行转换，下面是部分说明
 
 序号	名称	说明
@@ -97,6 +103,7 @@ sed -i '$a src-git pwdep https://github.com/hongweifuture/pwdep.git' feeds.conf.
 （4）	openwrt-x86-64-generic-squashfs-combined-efi.img或.gz	带UEFI固件为支持efi启动，原理同（1）的说明。
 （5）	openwrt-x86-64-generic-ext4-combined.img 或.gz	为Ext4分区文件，可作为升级使用直接写入到分区即可。efi.img同理
 （6）	openwrt-x86-64-combined-squashfs.iso	系统镜像文件，可以使用ultraiso或类似工具直接写入到磁盘即可，efi 文件同理。
+
 一般来说，用openwrt-x86-64-generic-squashfs-combined.img 或.gz 文件就可以了
 
 包含squashfs字样是带overlay的，相当于windows的ghost，如果使用中发生配置错误，可直接恢复默认（也就是与手机的恢复出厂设置类似）。
