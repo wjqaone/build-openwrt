@@ -13,7 +13,6 @@ sed -i '$a src-git luci https://github.com/coolsnowwolf/luci.git;openwrt-23.05' 
 sed -i '$a src-git routing https://github.com/coolsnowwolf/routing' feeds.conf.default
 sed -i '$a src-git telephony https://github.com/coolsnowwolf/telephony.git' feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 # other
 # rm -rf package/lean/{samba4,luci-app-samba4,luci-app-ttyd}
