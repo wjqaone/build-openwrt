@@ -67,7 +67,7 @@
 
 更新说明文档
 
-https://live.fanmingming.com/tv/m3u/ipv6.m3u
+https://github.com/kenzok8/small
 
 步骤1: 注册与登录GitHub
 访问 GitHub 并注册账号，如果已有账号则直接登录。
