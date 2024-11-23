@@ -69,6 +69,8 @@
 
 https://github.com/kenzok8/small
 
+https://www.right.com.cn/forum/thread-344825-1-1.html
+
 步骤1: 注册与登录GitHub
 访问 GitHub 并注册账号，如果已有账号则直接登录。
 步骤2: 设置个人访问令牌
