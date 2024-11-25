@@ -84,6 +84,8 @@ https://www.right.com.cn/forum/thread-344825-1-1.html
 步骤6: 启动编译
 返回GitHub仓库主页，点击Actions标签页，您会看到预定义的工作流。根据您的设备选择相应的编译流程开始执行。
 
+如果不需要在路由上实现 USB 文件共享/Samba 多媒体共享，需要在 Extra-packages 菜单中取消选择 automount 和 autosamba
+
 进阶
 配置ip，diy-part2.sh
 ```
