@@ -13,7 +13,6 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' feeds.conf.default
 sed -i '$a src-git lwb1978 https://github.com/lwb1978/openwrt-gecoosac' feeds.conf.default
 sed -i '$a src-git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git ~/package' feeds.conf.default
-sed -i '$a src-git brvphoenix https://github.com/brvphoenix/luci-app-wrtbwmon' feeds.conf.default
 # other
 # rm -rf package/lean/{samba4,luci-app-samba4,luci-app-ttyd}
 
